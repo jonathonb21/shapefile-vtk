@@ -1,0 +1,19 @@
+[build-system]
+requires = [""setuptools>=61""]
+build-backend = ""setuptools.build_meta""
+
+[project]
+name = ""pygtv""
+version = ""0.3.0""
+description = ""Export ESRI shapefiles and DBF attributes to binary VTK for ParaView""
+readme = ""README.md""
+requires-python = "">=3.10""
+authors = [{ name = ""Jonathon Brunson"", email = ""jonathonbrunson21@gmail.com"" }]
+license = { text = ""MIT"" }
+keywords = [""gis"", ""vtk"", ""paraview"", ""shapefile"", ""visualization""]
+dependencies = [""numpy"", ""pyevtk>=1.2.0""]
+
+[project.urls]
+Homepage = ""https://github.com/jonathonb21/pygtv""
+Repository = ""https://github.com/jonathonb21/pygtv""
+Issues = ""https://github.com/jonathonb21/pygtv/issues""
