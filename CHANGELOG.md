@@ -9,3 +9,4 @@
 ## 0.2.0 - upstream baseline
 
 - Pure-Python shapefile / DBF parsers and shapeToVTK CLI
+<!-- history:changelog-030 -->
