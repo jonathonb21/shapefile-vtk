@@ -14,6 +14,6 @@ keywords = [""gis"", ""vtk"", ""paraview"", ""shapefile"", ""visualization""]
 dependencies = [""numpy"", ""pyevtk>=1.2.0""]
 
 [project.urls]
-Homepage = ""https://github.com/jonathonb21/pygtv""
-Repository = ""https://github.com/jonathonb21/pygtv""
-Issues = ""https://github.com/jonathonb21/pygtv/issues""
+Homepage = ""https://github.com/jonathonb21/shapefile-vtk""
+Repository = ""https://github.com/jonathonb21/shapefile-vtk""
+Issues = ""https://github.com/jonathonb21/shapefile-vtk/issues""

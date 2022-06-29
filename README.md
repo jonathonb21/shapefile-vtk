@@ -1,10 +1,16 @@
-# PyGTV - GIS vectors to VTK for ParaView
+# Shapefile VTK - GIS vectors to VTK for ParaView
 
 **Maintainer:** [Jonathon Brunson](mailto:jonathonbrunson21@gmail.com)
 
-PyGTV reads ESRI shapefiles (.shp + .dbf) and exports binary VTK meshes you can open in ParaView, VisIt, or PyVista.
+Export ESRI shapefiles (.shp + .dbf) to binary VTK meshes for ParaView, VisIt, or PyVista.
 
-Fork of [paulo-herrera/PyGTV](https://github.com/paulo-herrera/PyGTV). See ATTRIBUTION.md.
+Fork of [paulo-herrera/PyGTV](https://github.com/paulo-herrera/PyGTV). See [ATTRIBUTION.md](ATTRIBUTION.md).
+
+<p align="center">
+  <img src="ex_image1.png" alt="Shapefile polygons rendered in ParaView" width="550">
+  <br>
+  <em>GIS polygons from a shapefile overlaid on a ParaView visualization.</em>
+</p>
 
 ## Quick start
 
@@ -16,5 +22,4 @@ python src/examples/points.py src/examples/ex1/points.shp
 
 ## License
 
-MIT - see LICENSE.
-<!-- history:readme-030 -->
+MIT - see [LICENSE](LICENSE).

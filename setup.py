@@ -43,15 +43,15 @@ setup(
     long_description = readme('README.md'),
     author = 'Jonathon Brunson',
     author_email = 'jonathonbrunson21@gmail.com',
-    url = 'https://github.com/jonathonb21/pygtv.git',
+    url = 'https://github.com/jonathonb21/shapefile-vtk.git',
     packages = ['gtv'],
     package_dir = {'gtv' : 'src'},
     package_data = {'gtv' :  ['LICENSE', 'examples/*.py', 'files/*.py', 'shapes/*.py']},
     scripts=['src/shapeToVTK.py'],
     project_urls={
-        "Bug Tracker": "http://github.com/jonathonb21/pygtv",
-        "Documentation": "http://github.com/jonathonb21/pygtv",
-        "Source Code": "http://github.com/jonathonb21/pygtv",
+        "Bug Tracker": "http://github.com/jonathonb21/shapefile-vtk",
+        "Documentation": "http://github.com/jonathonb21/shapefile-vtk",
+        "Source Code": "http://github.com/jonathonb21/shapefile-vtk",
     }
 )
 
