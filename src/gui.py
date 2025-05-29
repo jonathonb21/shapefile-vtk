@@ -122,7 +122,7 @@ class PyGIS(Frame):
         T.pack()
         
         self.text = Echo(T)
-        self.text.write("PyGTV version %s\n"%self.version)
+        self.text.write("Shapefile VTK version %s\n"%self.version)
         self.text.write("==============================\n")
         # for i in range(40):
             # T.insert(END, "Just a text Widget in two lines\n")

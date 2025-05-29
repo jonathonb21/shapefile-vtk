@@ -312,19 +312,7 @@ class FileDbf:
         return fdbf 
 
 if __name__ == "__main__":
-    #src = "/home/paulo/Desktop/PyGTV/src/examples/ex1/poly_lines.dbf"
-    src = "/home/paulo/Documents/pyqgis/src/examples/ex1/poly_lines.dbf"
-    
-    fdbf = FileDbf.read(src, convert_records = False)
-    fdbf.display()
-    values, text = fdbf.get_records_as_lists()
-    
-    for v in values.keys():
-        print(v)
-        print(values[v])
-        
-    for v in text.keys():
-        print(v)
-        print(text[v])
-        
-    print("*** ALL DONE ***")
+    import os
+    here = os.path.dirname(os.path.abspath(__file__))
+    src = os.path.join(here, "..", "examples", "ex1", "poly_lines.dbf")
+    print("sample:", src)

@@ -1,11 +1,14 @@
 # Changelog
 
-## 0.3.0 - 2026-06-02
+## 0.3.0 - 2026
 
-- Maintainer handoff and portfolio documentation refresh
-- Add pyproject.toml, GitHub Actions CI, and docs/USAGE.md
-- Update README for shapefile to VTK to ParaView workflow
+- Documentation refresh, CI workflow, and packaging metadata
+- README gallery and usage notes for ParaView workflows
 
-## 0.2.0 - upstream baseline
+## 0.2.0 - 2022
 
-- Pure-Python shapefile / DBF parsers and shapeToVTK CLI
+- Expanded examples and shapefile parser coverage
+
+## 0.1.0 - 2021
+
+- Initial release: shapefile/DBF parsers and shapeToVTK export CLI

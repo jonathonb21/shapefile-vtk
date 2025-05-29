@@ -1,28 +1,23 @@
-# PyGTV usage
+# Shapefile VTK usage
 
-## Install
-
-```bash
-pip install -e .
-```
+Developed by Jonathon Brunson (jonathonbrunson21@gmail.com).
 
 ## CLI
 
 ```bash
 shapeToVTK --help
-shapeToVTK path/to/layer.shp output_prefix
+shapeToVTK input.shp output.vtk
 ```
 
 ## Python API
 
 ```python
-from gtv.files.shp import read_shp
+# Add src to PYTHONPATH or install editable
+from files.shp import ShpFile
 ```
 
-## ParaView
+## ParaView workflow
 
-1. Export .vtu / .vtk from PyGTV
-2. File -> Open in ParaView
-3. Combine with DEM or simulation meshes for GIS context overlays
-
-Maintainer: Jonathon Brunson (jonathonbrunson21@gmail.com)
+1. Export `.vtk` from this tool
+2. Open in ParaView and apply filters as needed
+3. Combine with simulation meshes for GIS context overlays

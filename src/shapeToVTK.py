@@ -13,7 +13,7 @@
 # *  this list of conditions and the following disclaimer in the documentation      *
 # *  and/or other materials provided with the distribution.                         *
 # *                                                                                 *
-# * THIS SOFTWARE IS PROVIDED BY PAULO A. HERRERA ``AS IS'' AND ANY EXPRESS OR      *
+# * THIS SOFTWARE IS PROVIDED BY JONATHON BRUNSON ``AS IS'' AND ANY EXPRESS OR      *
 # * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF    *
 # * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO      *
 # * EVENT SHALL <COPYRIGHT HOLDER> OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,        *
@@ -28,7 +28,7 @@
 ################################################################################################
 # DESCRIPTION:                                                                                 #
 #                                                                                              #
-# Python Gis-to-Vtk (PyGTV) is a small python library to read and export GIS information       #
+# Shapefile VTK is a Python library to read and export GIS information       #
 # stored as shape (.shp) and associated (.dbf and .shx) files to VTK files that can be         #
 # imported into visualization packages such as Paraview, VisIt or Mayavi.                      #
 #                                                                                              #
@@ -116,7 +116,7 @@ def export_files(files_src, files_dst, default_z, verbose = False):
         shp.toVTK(dst, vals, text, default_z, verbose, comments = comments)
 
 def setup_cmd_parser():
-    parser = ArgumentParser(description = "PyGTV version: " + PYGTV_VERSION)
+    parser = ArgumentParser(description = "Shapefile VTK version: " + PYGTV_VERSION)
     parser.add_argument("-s", "--shape", dest="src",
                         help="path to shape file with or without extension .shp")
     parser.add_argument("-d", "--dest", dest="dst",
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     
     else:
         print("*"*40)
-        print("PyGTV version: " + PYGTV_VERSION)
+        print("Shapefile VTK version: " + PYGTV_VERSION)
         print("Exporting GIS data to VTK format...")
         print("Path to shape file(s): " + args.src)
         print("VTK output file: " + args.dst)

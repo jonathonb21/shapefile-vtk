@@ -243,30 +243,8 @@ class FileShp:
         return shp
         
         
-if __name__ == "__main__": 
-    from dbf import FileDbf
-    from prj import FilePrj
+if __name__ == "__main__":
     import os
-    
-    # read shape (.shp) files
-    #src = "/home/paulo/Desktop/PyGTV/src/examples/ex1/poly_lines.shp"
-    src = r"/home/paulo/Documents/pyqgis/src/examples/ex1/polygons.shp"
-    dst = "/home/paulo/Documents/pyqgis/vtk/polygons"
-    shp = FileShp.read(src, verbose = False)         # pass the pointer to the file. It could be faster to read it at once into memory.
-    print(shp)
-    #shp.list_shapes()
-    
-    src_dbf = src.split(".")[0] + ".dbf"
-    dbf = FileDbf.read(src_dbf)
-    #print(dbf)
-    
-    src_prj = src.split(".")[0] + ".prj"
-    prj = FilePrj.read(src_prj)
-    #print(prj)
-    
-    vals, text = dbf.get_records_as_lists()
-    comments = [".shp: " + shp.src]
-    comments = comments + [".dbf: " + dbf.src]
-    comments = comments + [".prj: " + prj.src]
-    shp.toVTK(dst, vals = vals, text = text, comments = comments)
-    print("*** ALL DONE ***")
+    here = os.path.dirname(os.path.abspath(__file__))
+    src = os.path.join(here, "..", "examples", "ex1", "polygons.shp")
+    print("sample:", src)
